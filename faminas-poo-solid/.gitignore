@@ -1,0 +1,15 @@
+# Compilados Java
+*.class
+*.log
+
+# Pacotes e arquivos de IDEs (VS Code, IntelliJ, Eclipse)
+.vscode/
+.idea/
+*.iml
+bin/
+build/
+out/
+target/
+.settings/
+.classpath
+.project
