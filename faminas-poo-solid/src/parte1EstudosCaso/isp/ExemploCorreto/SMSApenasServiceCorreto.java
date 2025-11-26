@@ -4,6 +4,7 @@ package ExemploCorreto;
 public class SMSApenasServiceCorreto implements ServicoDeMensagemCorreto {
     @Override
     public void enviarMensagem(String mensagem, String destinatario) {
-        System.out.println("SMS enviado para: " + destinatario + " | Mensagem: " + mensagem);
+        System.out.println("SMS enviado para: " + destinatario +
+         " | Mensagem: " + mensagem);
     }
 }

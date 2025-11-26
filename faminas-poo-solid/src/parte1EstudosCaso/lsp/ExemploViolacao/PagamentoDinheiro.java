@@ -4,7 +4,6 @@ public class PagamentoDinheiro extends PagamentoBase {
     public PagamentoDinheiro(double valor) {
         super(valor);
     }
-
     @Override
     public double calcularTaxa() {
         // A classe pai espera um double para somar.
