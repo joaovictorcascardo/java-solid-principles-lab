@@ -1,6 +1,6 @@
 package ExemploCorreto;
 
-public class ClienteViolacao {
+public class ClienteAplicacao {
     public static void processar(PagamentoBase pagamento) {
         double total = pagamento.calcularTotal(); 
         System.out.println("Processando " + pagamento.getClass().getSimpleName() + "...");

@@ -2,16 +2,16 @@ package ExemploViolacao;
 
 public class ClienteViolacao {
     public static void processar(PagamentoBase pagamento) {
-        try {
-            double total = pagamento.calcularTotal(); 
-            System.out.println("Total a pagar: R$ " + total);
-        } catch (UnsupportedOperationException e) {
-            System.out.println("ERRO LSP: " + e.getMessage());
-        }
+        // O método recebe a classe PAI (PagamentoBase).
+        double total = pagamento.getTotalComTaxa(); 
+        System.out.println("Total a pagar: R$ " + total);
+        System.out.println("-------------------------------");
     }
-
     public static void main(String[] args) {
-        processar(new PagamentoCartao(100.00)); // Funciona
-        processar(new PagamentoDinheiroViolacao(100.00)); // Quebra a aplicação
+        System.out.println("=== Iniciando Sistema de Pagamentos ===\n");
+        processar(new PagamentoCartao(100.00)); 
+        // Esse funciona porque implementou calcularTaxa retornando um número.
+        processar(new PagamentoDinheiro(100.00)); 
+        // A aplicação vai parar aqui com uma RuntimeException.
     }
 }

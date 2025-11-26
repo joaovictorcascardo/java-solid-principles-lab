@@ -1,4 +1,4 @@
-package ExemploViolacao;
+package ExemploCorreto;
 
 public class PagamentoCartao extends PagamentoBase {
     public PagamentoCartao(double valor) {

@@ -1,4 +1,4 @@
-package ExemploViolacao;
+package ExemploCorreto;
 
 public abstract class PagamentoBase {
     protected double valor;
