@@ -1,4 +1,4 @@
-package ExemploViolacao;
+package parte1EstudosCaso.srp.ExemploViolacao;
 
 public class RelatorioViolacao {
     public void gerarRelatorio() {

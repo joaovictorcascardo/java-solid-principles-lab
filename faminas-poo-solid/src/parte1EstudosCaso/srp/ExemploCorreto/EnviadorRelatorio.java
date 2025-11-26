@@ -1,3 +1,5 @@
+package parte1EstudosCaso.srp.ExemploCorreto;
+
 public class EnviadorRelatorio {
     // Responsabilidade única: Enviar os dados
     public void enviarPorEmail(String conteudo) {
