@@ -5,6 +5,6 @@ Objetivo: Demonstrar os principios SOLID com estudos de caso e um mini-projeto p
 
 ## Estrutura
 
-- **src/parte1-estudos-caso**: Exemplos de violação e correção dos princípios.
-- **src/parte2-mini-projeto**: Sistema de Pedidos e Pagamentos.
+- **src/parte1EstudosCaso**: Exemplos de violação e correção dos princípios.
+- **src/parte2MiniProjeto**: Sistema de Pedidos e Pagamentos.
 - **docs**: Documentação e apresentação.
