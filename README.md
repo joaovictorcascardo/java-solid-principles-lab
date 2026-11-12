@@ -6,11 +6,11 @@ Trabalho da disciplina de Programação Orientada a Objetos (ADS, Faminas). Cada
 
 | Princípio | Violação | Correção |
 | --- | --- | --- |
-| **S**RP, responsabilidade única | `RelatorioViolacao` gera e envia o relatório | `Relatorio` só gera, `EnviadorRelatorio` só envia |
-| **O**CP, aberto/fechado | `CalculadoraDescontoViolacao` cheia de `if` por tipo de cliente | interface `Desconto` com `DescontoEstudante` e `DescontoIdoso` |
-| **L**SP, substituição de Liskov | `QuadradoViolacao` herda de `Retangulo` e quebra o comportamento | `Forma` e `FormaRedimencional` separam o que cada forma faz |
-| **I**SP, segregação de interfaces | `ServicoDeNotificacao` obriga a implementar métodos que não usa | interfaces menores, `ServicoDeMensagemCorreto` e `ServicoDeLog` |
-| **D**IP, inversão de dependência | `NotificadorPedidoViolacao` cria o `GmailService` direto | `NotificadorPedido` depende da interface `Mensageiro` (e-mail ou WhatsApp) |
+| SRP, responsabilidade única | `RelatorioViolacao` gera e envia o relatório | `Relatorio` só gera, `EnviadorRelatorio` só envia |
+| OCP, aberto/fechado | `CalculadoraDescontoViolacao` cheia de `if` por tipo de cliente | interface `Desconto` com `DescontoEstudante` e `DescontoIdoso` |
+| LSP, substituição de Liskov | `QuadradoViolacao` herda de `Retangulo` e quebra o comportamento | `Forma` e `FormaRedimencional` separam o que cada forma faz |
+| ISP, segregação de interfaces | `ServicoDeNotificacao` obriga a implementar métodos que não usa | interfaces menores, `ServicoDeMensagemCorreto` e `ServicoDeLog` |
+| DIP, inversão de dependência | `NotificadorPedidoViolacao` cria o `GmailService` direto | `NotificadorPedido` depende da interface `Mensageiro` (e-mail ou WhatsApp) |
 
 ## Parte 2: mini projeto (`src/parte2MiniProjeto`)
 
